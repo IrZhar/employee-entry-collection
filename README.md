@@ -1,10 +1,15 @@
-# employee-entry-collection
-A employee entry where employeed are added toa collection object.
+# Employee Entry Advanced Project
+An employee Entry Application
 
-Automation
-Sqa
-Testing
+## Collections at Work
+This application redesigns the Employee Entry Application to include Collections instead of arays to demonstrate the benefits of a Collection over arrays.
 
-Java
-Maven
-Selenium
+[Jean-francois Nepton](http://sqasolution.com)
+
+* Automation
+* SQA
+* Testing
+
+- Java
+- Maven
+- Selenium
