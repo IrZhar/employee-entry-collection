@@ -7,6 +7,7 @@
  */
 package com.sqa.iz.employees;
 
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -21,10 +22,11 @@ import java.util.Scanner;
  * @since 1.0
  */
 public class EmployeeEntry {
-
 	private static String[] addresses;
 
 	private static String[] ages;
+
+	private static List<Employee> employees;
 
 	private static String[] jobTitles;
 
@@ -39,6 +41,10 @@ public class EmployeeEntry {
 	private static String[] newNames;
 
 	private static Scanner scanner;
+
+	// private static List<Employee> employees;
+
+	// private static Scanner scanner;
 
 	public static boolean addEmployees() {
 		// Variable to hold num of Employees
@@ -97,6 +103,31 @@ public class EmployeeEntry {
 				continue;
 			}
 		}
+	}
+
+	/**
+	 * @param i
+	 */
+	private static void createEmployee(int i) {
+		// Variables to hold values
+		String name;
+		String age;
+		String address;
+		String jobTitle;
+		// Request values for employees
+		System.out.println("What is employee " + (i + 1) + "'s name:");
+		name = scanner.nextLine();
+		System.out.println("What is " + name + "'s age:");
+		age = scanner.nextLine();
+		System.out.println("What is " + name + "'s address:");
+		address = scanner.nextLine();
+		System.out.println("What is " + name + "'s job title:");
+		jobTitle = scanner.nextLine();
+		// Set those values into the new arrays
+		newNames[i] = name;
+		newAges[i] = age;
+		newAddresses[i] = address;
+		newJobTitles[i] = jobTitle;
 	}
 
 	public static void displayEmployees() {
@@ -171,30 +202,5 @@ public class EmployeeEntry {
 			ages = newAges;
 			jobTitles = newJobTitles;
 		}
-	}
-
-	/**
-	 * @param i
-	 */
-	private static void createEmployee(int i) {
-		// Variables to hold values
-		String name;
-		String age;
-		String address;
-		String jobTitle;
-		// Request values for employees
-		System.out.println("What is employee " + (i + 1) + "'s name:");
-		name = scanner.nextLine();
-		System.out.println("What is " + name + "'s age:");
-		age = scanner.nextLine();
-		System.out.println("What is " + name + "'s address:");
-		address = scanner.nextLine();
-		System.out.println("What is " + name + "'s job title:");
-		jobTitle = scanner.nextLine();
-		// Set those values into the new arrays
-		newNames[i] = name;
-		newAges[i] = age;
-		newAddresses[i] = address;
-		newJobTitles[i] = jobTitle;
 	}
 }
