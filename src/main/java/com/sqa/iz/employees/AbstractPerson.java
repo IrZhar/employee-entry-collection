@@ -1,6 +1,6 @@
 package com.sqa.iz.employees;
 
-public class AbsractPerson implements IPerson {
+public class AbstractPerson implements IPerson {
 
 	private String address;
 	private int age;
